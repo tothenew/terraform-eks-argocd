@@ -44,22 +44,28 @@ You should get as an output:
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
+| aws | >= 3.72 |
+| helm | >= 1.0, < 3.0 |
+| kubernetes | >= 1.10.0, < 3.0.0 |
 
 ## Providers
 
-No providers.
-
-## Modules
-
-No modules.
-
-## Resources
-
-No resources.
+| Name | Version |
+|------|---------|
+| helm | >= 1.0, < 3.0 |
+| kubernetes | >= 1.10.0, < 3.0.0 |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| create\_namespace | Whether to create Kubernetes namespace with name defined by `namespace`. | `bool` | `true` | no |
+| enabled | Variable indicating whether deployment is enabled. | `bool` | `true` | no |
+| helm\_chart\_repo | Argo CD repository name. | `string` | `"https://argoproj.github.io/argo-helm"` | no |
+| helm\_services | n/a | `list` | <pre>[<br>  {<br>    "chart_version": "3.26.12",<br>    "name": "argo-cd",<br>    "release_name": "argo-cd",<br>    "settings": {}<br>  }<br>]</pre> | no |
+| mod\_dependency | Dependence variable binds all AWS resources allocated by this module, dependent modules reference this variable. | `any` | `null` | no |
+| namespace | Kubernetes namespace to deploy Argo CD Helm chart. | `string` | `"argocd"` | no |
+| settings | Additional settings which will be passed to the Helm chart values. | `map` | `{}` | no |
 
 ## Outputs
 
