@@ -3,7 +3,7 @@
 [![Lint Status](https://github.com/tothenew/terraform-aws-template/workflows/Lint/badge.svg)](https://github.com/tothenew/terraform-aws-template/actions)
 [![LICENSE](https://img.shields.io/github/license/tothenew/terraform-aws-template)](https://github.com/tothenew/terraform-aws-template/blob/master/LICENSE)
 
-Terraform module for deploying Kubernetes [Argo CD](https://argoproj.github.io/argo-cd/) inside a pre-existing EKS cluster.
+Terraform module for deploying Kubernetes [Argo CD](https://argoproj.github.io/argo-cd/) and related services inside a pre-existing EKS cluster.
 
 ## Usage
 
