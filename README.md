@@ -9,7 +9,7 @@ Terraform module for deploying Kubernetes [Argo CD](https://argoproj.github.io/a
 
 ```bash
 module "argocd" {
-  source = "git::https://github.com/tothenew/terraform-eks-argocd.git"
+  source = "git::https://github.com/tothenew/terraform-helm-argocd.git"
 
   enabled = true
 }
