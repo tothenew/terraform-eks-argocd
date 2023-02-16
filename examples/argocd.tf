@@ -1,5 +1,5 @@
 module "argocd" {
-  source = "git::https://github.com/tothenew/terraform-eks-argocd.git"
+  source = "git::https://github.com/tothenew/terraform-helm-argocd.git"
 
   enabled = true
   helm_services = [
