@@ -41,7 +41,7 @@ kubectl get ing argocd-server -n argocd -o json | jq --raw-output .status.loadBa
 | create\_namespace | Whether to create Kubernetes namespace with name defined by `namespace`. | `bool` | `true` | no |
 | enabled | Variable indicating whether deployment is enabled. | `bool` | `true` | no |
 | helm\_chart\_repo | Argo CD repository name. | `string` | `"https://argoproj.github.io/argo-helm"` | no |
-| helm\_services | n/a | `list` | <pre>[<br>  {<br>    "chart_version": "3.26.12",<br>    "name": "argo-cd",<br>    "release_name": "argo-cd",<br>    "settings": {}<br>  }<br>]</pre> | no |
+| helm\_services | n/a | `list` | <pre>[<br>  {<br>    "chart_version": "5.16.1",<br>    "name": "argocd",<br>    "release_name": "argo-cd",<br>    "settings": {}<br>  }<br>]</pre> | no |
 | namespace | Kubernetes namespace to deploy Argo CD Helm chart. | `string` | `"argocd"` | no |
 | settings | Additional settings which will be passed to the Helm chart values. | `map` | `{}` | no |
 
