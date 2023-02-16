@@ -1,5 +1,5 @@
 resource "helm_release" "argocd" {
-  depends_on = [var.mod_dependency, kubernetes_namespace.argocd]
+  depends_on = [kubernetes_namespace.argocd]
   count      = var.enabled ? length(var.helm_services) : 0
   name       = var.helm_services[count.index].name
   chart      = var.helm_services[count.index].release_name

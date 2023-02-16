@@ -33,11 +33,6 @@ variable "namespace" {
   description = "Kubernetes namespace to deploy Argo CD Helm chart."
 }
 
-variable "mod_dependency" {
-  default     = null
-  description = "Dependence variable binds all AWS resources allocated by this module, dependent modules reference this variable."
-}
-
 variable "settings" {
   default     = {}
   description = "Additional settings which will be passed to the Helm chart values."
