@@ -18,7 +18,7 @@ module "argocd" {
             "annotations" = {
               "kubernetes.io/ingress.class"                    = "alb"
               "alb.ingress.kubernetes.io/scheme"               = "internet-facing"
-              "alb.ingress.kubernetes.io/subnets"              = "subnet-0257e8262a7017948,subnet-062a9cb5ea10455da,subnet-06b6a7e3c22de35ca"
+              "alb.ingress.kubernetes.io/subnets"              = "subnet-1,subnet-2,subnet-3"
               "alb.ingress.kubernetes.io/target-type"          = "ip"
               "alb.ingress.kubernetes.io/success-codes"        = "200"
               "alb.ingress.kubernetes.io/healthcheck-protocol" = "HTTP"
